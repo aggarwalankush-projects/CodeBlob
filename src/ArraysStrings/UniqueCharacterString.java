@@ -3,8 +3,9 @@ package ArraysStrings;
 public class UniqueCharacterString {
 
     public static void main(String[] args) {
-        System.out.println(isUniqueChar("ball"));
-        System.out.println(isUniqueChar("racket"));
+        System.out.println("Check Unique characters in String:");
+        System.out.println("ball -> "+isUniqueChar("ball"));
+        System.out.println("racket -> "+isUniqueChar("racket"));
     }
 
     /**

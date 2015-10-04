@@ -3,8 +3,9 @@ package ArraysStrings;
 public class RunLengthEncoding {
 
     public static void main(String[] args) {
-        System.out.println(compress("aabbbbcffff"));
-        System.out.println(compress("crazy"));
+        System.out.println("Compress the string:");
+        System.out.println("aabbbbcffff -> "+compress("aabbbbcffff"));
+        System.out.println("crazy -> "+compress("crazy"));
     }
 
 
