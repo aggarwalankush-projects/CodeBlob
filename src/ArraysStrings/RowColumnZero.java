@@ -19,7 +19,6 @@ public class RowColumnZero {
 
     /**
      * Time complexity: O(nm)
-     * Space complexity: O(n+m)
      */
     public static void processArray(int[][] array) {
         if (array == null)
