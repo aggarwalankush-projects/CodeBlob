@@ -1,8 +1,10 @@
 package ArraysStrings;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
+/**
+ * Splitting an array into two subarrays with minimal sum
+ */
 public class MinDifferenceSplitArray {
 
     public static void main(String[] args) {

@@ -2,6 +2,9 @@ package ArraysStrings;
 
 import java.util.Arrays;
 
+/**
+ * Find the sum of contiguous subarray within a 1D array of numbers which has the largest sum.
+ */
 public class MaxSubarraySum {
 
     public static void main(String[] args) {

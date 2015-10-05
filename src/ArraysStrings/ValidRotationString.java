@@ -1,5 +1,10 @@
 package ArraysStrings;
 
+
+/**
+ * Given 2 strings, s1 and s2,
+ * check whether s1 is a rotation of s2
+ */
 public class ValidRotationString {
 
     public static void main(String[] args) {

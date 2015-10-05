@@ -1,5 +1,8 @@
 package ArraysStrings;
 
+/**
+ * Given a string, reverse it
+ */
 public class ReverseString {
 
     public static void main(String[] args) {

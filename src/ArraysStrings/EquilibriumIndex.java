@@ -2,6 +2,10 @@ package ArraysStrings;
 
 import java.util.Arrays;
 
+/**
+ * Equilibrium index of an array is an index such that
+ * the sum of elements at lower indexes is equal to the sum of elements at higher indexes.
+ */
 public class EquilibriumIndex {
 
     public static void main(String[] args) {

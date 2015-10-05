@@ -2,6 +2,10 @@ package ArraysStrings;
 
 import java.util.Arrays;
 
+/**
+ * Given 2 strings, S1 and S2,
+ * check if S2 is premutation of S1
+ */
 public class ValidPermutation {
 
     public static void main(String[] args) {

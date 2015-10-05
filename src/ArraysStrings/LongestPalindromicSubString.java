@@ -1,5 +1,8 @@
 package ArraysStrings;
 
+/**
+ * Given a string, find the longest substring which is palindrome.
+ */
 public class LongestPalindromicSubString {
 
     public static void main(String[] args) {

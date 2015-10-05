@@ -1,5 +1,9 @@
 package ArraysStrings;
 
+/**
+ * Given an input string,
+ * return the Run Length Encoded string for the input string.
+ */
 public class RunLengthEncoding {
 
     public static void main(String[] args) {

@@ -2,6 +2,10 @@ package ArraysStrings;
 
 import java.util.Arrays;
 
+/**
+ *  The longest repeated substring problem is the problem of
+ *  finding the longest substring of a string that occurs at least twice.
+ */
 public class LongestRepeatedSubString {
 
     public static void main(String[] args) {

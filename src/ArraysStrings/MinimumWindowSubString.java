@@ -1,7 +1,9 @@
 package ArraysStrings;
 
-import java.util.Arrays;
-
+/**
+ * Given a string Source and a string Target,
+ * find the minimum window in Source which will contain all the characters in Target
+ */
 public class MinimumWindowSubString {
 
     public static void main(String[] args) {

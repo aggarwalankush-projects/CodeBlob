@@ -1,5 +1,8 @@
 package ArraysStrings;
 
+/**
+ * Given a string, check if it contains only distinct characters
+ */
 public class UniqueCharacterString {
 
     public static void main(String[] args) {

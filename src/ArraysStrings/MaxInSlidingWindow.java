@@ -3,6 +3,11 @@ package ArraysStrings;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+
+/**
+ * There is a sliding window of size k which is moving from the very left of the array to the very right.
+ * Each time the sliding window moves right by one position.
+ */
 public class MaxInSlidingWindow {
 
     public static void main(String[] args) {
