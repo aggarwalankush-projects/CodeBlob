@@ -12,8 +12,7 @@ public class MaxInSlidingWindow {
 
     public static void main(String[] args) {
         int[] array = {7, 3, 2, 4, 1, 6, 4};
-        System.out.println("Input Array:");
-        System.out.println(Arrays.toString(array));
+        System.out.println("Input Array: " + Arrays.toString(array));
         System.out.println("For window size 3, max for each window:");
         findKMax(array, 3);
     }

@@ -11,11 +11,9 @@ public class EvenOdd {
 
     public static void main(String[] args) {
         int[] array = {2, 5, 7, 8, 1, 6, 9, 1, 6};
-        System.out.println("Input Array:");
-        System.out.println(Arrays.toString(array));
-        System.out.println("Rearranged Even at even index and Odd at odd index:");
+        System.out.println("Input Array: " + Arrays.toString(array));
         rearrange(array);
-        System.out.println(Arrays.toString(array));
+        System.out.println("Rearranged Array: " + Arrays.toString(array));
     }
 
 

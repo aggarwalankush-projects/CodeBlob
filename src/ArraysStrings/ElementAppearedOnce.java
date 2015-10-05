@@ -10,8 +10,7 @@ public class ElementAppearedOnce {
 
     public static void main(String[] args) {
         int[] array = {1, 1, 1, 6, 5, 6, 6};
-        System.out.println("Input Array:");
-        System.out.println(Arrays.toString(array));
+        System.out.println("Input Array: " + Arrays.toString(array));
         System.out.println("Element Appeared Once -> " + findUniqueElement(array));
 
     }

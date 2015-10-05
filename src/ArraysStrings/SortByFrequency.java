@@ -9,11 +9,9 @@ public class SortByFrequency {
 
     public static void main(String[] args) {
         int[] array = {3, 3, 1, 1, 1, 5, 5, 5, 5, 5, 3, 6, 6};
-        System.out.println("Input Array:");
-        System.out.println(Arrays.toString(array));
-        System.out.println("Sorted By Frequency:");
+        System.out.println("Input Array: " + Arrays.toString(array));
         frequencySort(array);
-        System.out.println(Arrays.toString(array));
+        System.out.println("Sorted By Frequency: " + Arrays.toString(array));
     }
 
 

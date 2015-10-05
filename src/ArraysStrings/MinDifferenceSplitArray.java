@@ -9,10 +9,8 @@ public class MinDifferenceSplitArray {
 
     public static void main(String[] args) {
         int[] array = {7, 3, 2, 6, 1, 6, 4};
-        System.out.println("Input Array:");
-        System.out.println(Arrays.toString(array));
-        System.out.println("Minimum Difference between 2 splits:");
-        System.out.println(divide(array, 0, 0, 0));
+        System.out.println("Input Array: " + Arrays.toString(array));
+        System.out.println("Minimum Difference in two subarrays: " + divide(array, 0, 0, 0));
     }
 
 

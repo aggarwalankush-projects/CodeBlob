@@ -10,8 +10,7 @@ public class PeakElement {
 
     public static void main(String[] args) {
         int[] array = {10, 9, 5, 6, 8, 11, 10};
-        System.out.println("Input Array:");
-        System.out.println(Arrays.toString(array));
+        System.out.println("Input Array: " + Arrays.toString(array));
         int peakIndex = findPeakElement(array, 0, array.length - 1);
         System.out.println("Peak Index: " + peakIndex + " and Element: " + array[peakIndex]);
     }

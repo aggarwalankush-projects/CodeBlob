@@ -11,14 +11,10 @@ public class MinLenUnsortedSubarray {
 
     public static void main(String[] args) {
         int[] array1 = {1, 4, 6, 7, 5, 9, 4, 12};
-        System.out.println("Input Array:");
-        System.out.println(Arrays.toString(array1));
-        System.out.println("Smallest unsorted subarray to be sorted:");
+        System.out.println("Input Array: " + Arrays.toString(array1));
         findSubarray(array1);
         int[] array2 = {1, 2, 3, 4, 5, 6};
-        System.out.println("\nInput Array:");
-        System.out.println(Arrays.toString(array2));
-        System.out.println("Smallest unsorted subarray to be sorted:");
+        System.out.println("\nInput Array: " + Arrays.toString(array2));
         findSubarray(array2);
     }
 
@@ -68,7 +64,7 @@ public class MinLenUnsortedSubarray {
     }
 
     private static void printArray(int[] array, int start, int end) {
-        ArrayList<Integer> list=new ArrayList<>();
+        ArrayList<Integer> list = new ArrayList<>();
         for (int i = start; i <= end; i++) {
             list.add(array[i]);
         }
