@@ -21,10 +21,6 @@ public class LoopStart {
         loopStart(n1);
     }
 
-    /**
-     * Time Complexity: O(N)
-     * Space Complexity: O(1)
-     */
     public static void loopStart(Node<Integer> head) {
         if (head == null)
             return;
