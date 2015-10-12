@@ -30,17 +30,16 @@ public class DuplicateRemove {
         if (n == null || n.next == null)
             return;
         HashSet<Integer> set = new HashSet<>();
-        Node<Integer> prev = null;
-        while (n != null) {
-            if (set.contains(n.data))
-                prev.next = n.next;
+        while (n.next != null) {
+            set.add(n.data);
+            if (set.contains(n.next.data))
+                n.next = n.next.next;
             else {
-                set.add(n.data);
-                prev = n;
+                n = n.next;
             }
-            n = n.next;
         }
     }
+
     /**
      * Time Complexity: O(N*N)
      * Space Complexity: O(1)
@@ -50,12 +49,12 @@ public class DuplicateRemove {
         if (n == null || n.next == null)
             return;
         while (n != null) {
-            Node<Integer> runner=n;
-            while(runner.next!=null){
-                if(runner.next.data.equals(n.data))
-                    runner.next=runner.next.next;
+            Node<Integer> runner = n;
+            while (runner.next != null) {
+                if (runner.next.data.equals(n.data))
+                    runner.next = runner.next.next;
                 else
-                    runner=runner.next;
+                    runner = runner.next;
             }
             n = n.next;
         }
