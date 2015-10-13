@@ -1,15 +1,20 @@
 package TreesGraphs;
 
+//@formatter:off
 /**
  * Check if a binary tree is balanced.
  * A binary tree is balanced if the heights of the two subtrees of any node
  * never differ by more than one.
- *    10
- *   /  \
- *  7   8
- * / \
- * 3  9
+ *
+ *       10
+ *     /   \
+ *    7     8
+ *   / \   / \
+ *  3   9 4   6
+ *
  */
+//@formatter:on
+
 public class BalancedBinaryTree {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(10);
@@ -17,10 +22,14 @@ public class BalancedBinaryTree {
         TreeNode node2 = new TreeNode(8);
         TreeNode node3 = new TreeNode(3);
         TreeNode node4 = new TreeNode(9);
+        TreeNode node5 = new TreeNode(4);
+        TreeNode node6 = new TreeNode(6);
         root.left = node1;
         root.right = node2;
         node1.left = node3;
         node1.right = node4;
+        node2.left = node5;
+        node2.right = node6;
         System.out.println(isBalanced(root));
     }
 
