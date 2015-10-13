@@ -38,4 +38,15 @@ public class Stack<K> {
         return count;
     }
 
+    @Override
+    public String toString() {
+        Node<K> n=top;
+        StringBuilder sb=new StringBuilder("(Top to Bottom) ");
+        while(n.next!=null){
+            sb.append(n.data+"->");
+            n=n.next;
+        }
+        sb.append(n.data);
+        return sb.toString();
+    }
 }
