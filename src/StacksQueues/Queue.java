@@ -25,4 +25,12 @@ public class Queue<K> {
         return temp.data;
     }
 
+    K peek(){
+        return first.data;
+    }
+
+    boolean isEmpty(){
+        return first==null;
+    }
+
 }
