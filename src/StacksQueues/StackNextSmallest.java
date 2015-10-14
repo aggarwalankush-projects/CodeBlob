@@ -7,7 +7,7 @@ import java.util.Arrays;
  * The Next smallest Element for an element x is the first smallest element on the right side of x in array.
  * Elements for which no smallest element exist, consider next smallest element as -1.
  */
-public class NextSmallest {
+public class StackNextSmallest {
 
     public static void main(String[] args) {
         int[] array = {5, 8, 4, 1, 6};

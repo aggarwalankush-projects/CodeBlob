@@ -3,7 +3,7 @@ package StacksQueues;
 /**
  * Solve Tower of Hanoi using Stacks
  */
-public class TowerOfHanoi {
+public class StackTowerOfHanoi {
 
     public static void main(String[] args) {
         int n = 3;

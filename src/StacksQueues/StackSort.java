@@ -3,7 +3,7 @@ package StacksQueues;
 /**
  * Sort a stack - Biggest on top
  */
-public class SortStack {
+public class StackSort {
 
     public static void main(String[] args) {
         Stack<Integer> stack = new Stack<>();
