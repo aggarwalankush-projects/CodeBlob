@@ -14,7 +14,7 @@ import java.util.LinkedHashSet;
  */
 //@formatter:on
 
- public class NodeDistanceKFromLeaf {
+ public class BTNodeDistanceKFromLeaf {
      public static void main(String[] args) {
          TreeNode root = TreeUtils.createBinaryTree(10, 17, 1, 3, 9, null, 16);
          for (int i = 0; i < 3; i++)

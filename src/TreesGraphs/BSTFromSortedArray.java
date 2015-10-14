@@ -4,7 +4,7 @@ package TreesGraphs;
  * Given a sorted (increasing order) array with unique integer elements,
  * Generate a binary search tree with minimal height.
  */
-public class SortedArrayToBST {
+public class BSTFromSortedArray {
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, 5};
         System.out.println("Tree generated with root: " + arrayToBST(array));

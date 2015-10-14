@@ -13,7 +13,7 @@ package TreesGraphs;
  */
 //@formatter:on
 
-public class ValidBST {
+public class BSTValid {
     public static void main(String[] args) {
         TreeNode root = TreeUtils.createBinaryTree(10, 7, 13, 3, 9, null, 16);
         System.out.println("Is valid BST: " + isValidBST(root));

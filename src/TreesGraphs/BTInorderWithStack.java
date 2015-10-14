@@ -15,7 +15,7 @@ import java.util.Stack;
  */
 //@formatter:on
 
- public class InorderWithStack {
+ public class BTInorderWithStack {
      public static void main(String[] args) {
          TreeNode root = TreeUtils.createBinaryTree(10, 17, 13, 3, 9, null, 16);
          ArrayList<Integer> list = new ArrayList<>();

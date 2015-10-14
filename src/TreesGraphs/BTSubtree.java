@@ -14,7 +14,7 @@ package TreesGraphs;
  */
 //@formatter:on
 
-public class SubTree {
+public class BTSubtree {
     public static void main(String[] args) {
         TreeNode t1 = TreeUtils.createBinaryTree(10, 17, 1, 3, 9, null, 16);
         TreeNode t2 = TreeUtils.createBinaryTree(17, 3, 9);

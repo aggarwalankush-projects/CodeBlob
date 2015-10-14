@@ -15,7 +15,7 @@ package TreesGraphs;
  */
 //@formatter:on
 
-public class BalancedBinaryTree {
+public class BTBalanced {
     public static void main(String[] args) {
         TreeNode root = TreeUtils.createBinaryTree(10, 17, 1, 3, 9, null, 16);
         System.out.println("Is binary tree balanced: " + isBalanced(root));

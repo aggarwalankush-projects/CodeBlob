@@ -14,7 +14,7 @@ import java.util.Stack;
  */
 //@formatter:on
 
- public class SumKBST {
+ public class BSTSumK {
      public static void main(String[] args) {
          TreeNode root = TreeUtils.createBST(3, 7, 9, 10, 13, 16);
          findPairOfSumK(root, 16);

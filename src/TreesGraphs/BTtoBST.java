@@ -16,7 +16,7 @@ import java.util.Collections;
  */
 //@formatter:on
 
-public class BinaryTreeToBST {
+public class BTtoBST {
     public static void main(String[] args) {
         TreeNode root = TreeUtils.createBinaryTree(10, 17, 1, 3, 9, null, 16);
         ArrayList<Integer> list = new ArrayList<>();

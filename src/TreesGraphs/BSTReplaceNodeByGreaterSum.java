@@ -13,11 +13,11 @@ package TreesGraphs;
  */
 //@formatter:on
 
-public class ReplaceNodeByGreaterSumBST {
+public class BSTReplaceNodeByGreaterSum {
     public static void main(String[] args) {
         TreeNode root = TreeUtils.createBST(3, 7, 9, 10, 13, 16);
         replaceBST(root);
-        System.out.println(BinaryTreeToLinkedList.generateLists(root));
+        System.out.println(BTtoLinkedList.generateLists(root));
     }
 
 

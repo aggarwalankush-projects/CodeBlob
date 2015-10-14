@@ -14,7 +14,7 @@ import java.util.Stack;
  */
 //@formatter:on
 
- public class MedianBST {
+ public class BSTMedian {
      public static void main(String[] args) {
          TreeNode root = TreeUtils.createBST(3, 7, 9, 10, 13, 16);
          System.out.println("Median of given BST: " + findMedian(root, 6));

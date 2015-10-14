@@ -16,7 +16,7 @@ import static TreesGraphs.GraphNode.State.*;
  */
 //@formatter:on
 
-public class BFS {
+public class GraphBFS {
     public static void main(String[] args) {
         Graph g = createGraph();
         GraphNode[] nodes = g.getNodes();

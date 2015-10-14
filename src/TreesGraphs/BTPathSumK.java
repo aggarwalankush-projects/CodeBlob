@@ -15,7 +15,7 @@ import java.util.ArrayList;
  */
 //@formatter:on
 
- public class PathSumK {
+ public class BTPathSumK {
      public static void main(String[] args) {
          TreeNode root = TreeUtils.createBinaryTree(10, 17, 1, 3, 9, null, 16);
          System.out.println("All paths with Sum = 17 are " + findPaths(root, 17));
