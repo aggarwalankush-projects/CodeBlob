@@ -2,9 +2,7 @@ package TreesGraphs;
 
 //@formatter:off
 /**
- * Check if a binary tree is balanced.
- * A binary tree is balanced if the heights of the two subtrees of any node
- * never differ by more than one.
+ * Check if a binary tree is a binary search tree.
  *
  *       10
  *     /   \

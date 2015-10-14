@@ -3,6 +3,7 @@ package TreesGraphs;
 public class TreeNode {
     TreeNode left;
     TreeNode right;
+    TreeNode parent;
     int data;
 
     public TreeNode(int data) {
