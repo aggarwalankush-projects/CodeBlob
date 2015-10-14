@@ -1,4 +1,4 @@
-package ArraysStrings;
+package Strings;
 
 /**
  * Given a string Source and a string Target,

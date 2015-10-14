@@ -1,4 +1,4 @@
-package ArraysStrings;
+package Strings;
 
 /**
  * Given a string, check if it contains only distinct characters

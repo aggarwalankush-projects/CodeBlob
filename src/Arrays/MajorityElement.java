@@ -1,7 +1,6 @@
-package ArraysStrings;
+package Arrays;
 
 import java.util.Arrays;
-import java.util.Stack;
 
 /**
  * A majority element in an array of size N is an element
