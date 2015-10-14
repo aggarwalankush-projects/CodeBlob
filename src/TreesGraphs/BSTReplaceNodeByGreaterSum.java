@@ -4,18 +4,18 @@ package TreesGraphs;
 /**
  * Given a BST, replace each node with sum of all nodes greater than that.
  *
- *       10
- *     /   \
- *    7     13
- *   / \     \
- *  3   9    16
+ *      10
+ *     /  \
+ *    7   13
+ *   / \  / \
+ *  3  9 11 16
  *
  */
 //@formatter:on
 
 public class BSTReplaceNodeByGreaterSum {
     public static void main(String[] args) {
-        TreeNode root = TreeUtils.createBST(3, 7, 9, 10, 13, 16);
+        TreeNode root = TreeUtils.createBST(3, 7, 9, 10, 11, 13, 16);
         replaceBST(root);
         System.out.println(BTtoLinkedList.generateLists(root));
     }

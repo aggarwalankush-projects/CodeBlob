@@ -5,18 +5,18 @@ import java.util.Stack;
  /**
  * Find a pair with given sum in a BST
  *
- *       10
- *     /   \
- *    7     13
- *   / \     \
- *  3   9    16
+ *      10
+ *     /  \
+ *    7   13
+ *   / \  / \
+ *  3  9 11 16
  *
  */
 //@formatter:on
 
  public class BSTSumK {
      public static void main(String[] args) {
-         TreeNode root = TreeUtils.createBST(3, 7, 9, 10, 13, 16);
+         TreeNode root = TreeUtils.createBST(3, 7, 9, 10, 11, 13, 16);
          findPairOfSumK(root, 16);
      }
 
