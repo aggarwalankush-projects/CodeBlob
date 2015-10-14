@@ -15,7 +15,7 @@ package TreesGraphs;
 
 public class ReplaceNodeByGreaterSumBST {
     public static void main(String[] args) {
-        TreeNode root = TreeUtils.createBinaryTree(10, 7, 13, 3, 9, null, 16);
+        TreeNode root = TreeUtils.createBST(3, 7, 9, 10, 13, 16);
         replaceBST(root);
         System.out.println(BinaryTreeToLinkedList.generateLists(root));
     }
