@@ -55,10 +55,12 @@ public class TreeUtils {
             i++;
             if (node.left != null)
                 queue.add(node.left);
-            node.setRightChild(array[i] != null ? new TreeNode(array[i]) : null);
-            i++;
-            if (node.right != null)
-                queue.add(node.right);
+            if (i != len) {
+                node.setRightChild(array[i] != null ? new TreeNode(array[i]) : null);
+                i++;
+                if (node.right != null)
+                    queue.add(node.right);
+            }
         }
         return root;
     }
