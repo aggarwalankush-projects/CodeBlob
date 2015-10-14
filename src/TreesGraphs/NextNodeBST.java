@@ -17,10 +17,12 @@ package TreesGraphs;
 
 public class NextNodeBST {
     public static void main(String[] args) {
-        TreeNode root = createTree();
+        TreeNode root = TreeUtils.createBST(3, 7, 9, 10, 13, 16);
         System.out.println("Next Node of " + root + ": " + nextNodeBST(root));
-        System.out.println("Next Node of " + root.right.right + ": " + nextNodeBST(root.right.right));
-        System.out.println("Next Node of " + root.left.right + ": " + nextNodeBST(root.left.right));
+        TreeNode node = TreeUtils.findBST(root, 16);
+        System.out.println("Next Node of " + node + ": " + nextNodeBST(node));
+        node = TreeUtils.findBST(root, 7);
+        System.out.println("Next Node of " + node + ": " + nextNodeBST(node));
     }
 
     public static TreeNode nextNodeBST(TreeNode node) {
@@ -43,27 +45,6 @@ public class NextNodeBST {
         while (node.left != null)
             node = node.left;
         return node;
-    }
-
-
-    public static TreeNode createTree() {
-        TreeNode root = new TreeNode(10);
-        TreeNode node1 = new TreeNode(7);
-        TreeNode node2 = new TreeNode(13);
-        TreeNode node3 = new TreeNode(3);
-        TreeNode node4 = new TreeNode(9);
-        TreeNode node6 = new TreeNode(16);
-        root.left = node1;
-        root.right = node2;
-        node1.parent = root;
-        node2.parent = root;
-        node1.left = node3;
-        node1.right = node4;
-        node3.parent = node1;
-        node4.parent = node1;
-        node2.right = node6;
-        node6.parent = node2;
-        return root;
     }
 }
 

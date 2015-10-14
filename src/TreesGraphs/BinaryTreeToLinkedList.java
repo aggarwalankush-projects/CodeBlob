@@ -9,15 +9,15 @@ import java.util.LinkedList;
  *
  *       10
  *     /   \
- *    7     8
- *   / \   / \
- *  3   9 4   6
+ *    17    1
+ *   / \     \
+ *  3   9    16
  *
  */
 //@formatter:on
 public class BinaryTreeToLinkedList {
     public static void main(String[] args) {
-        TreeNode root = createTree();
+        TreeNode root = TreeUtils.createBinaryTree(10, 17, 1, 3, 9, null, 16);
         ArrayList<LinkedList<TreeNode>> listOfLists = generateLists(root);
         System.out.println("List of LinkedLists: " + listOfLists);
     }
@@ -42,23 +42,6 @@ public class BinaryTreeToLinkedList {
             }
         }
         return result;
-    }
-
-    public static TreeNode createTree() {
-        TreeNode root = new TreeNode(10);
-        TreeNode node1 = new TreeNode(7);
-        TreeNode node2 = new TreeNode(8);
-        TreeNode node3 = new TreeNode(3);
-        TreeNode node4 = new TreeNode(9);
-        TreeNode node5 = new TreeNode(4);
-        TreeNode node6 = new TreeNode(6);
-        root.left = node1;
-        root.right = node2;
-        node1.left = node3;
-        node1.right = node4;
-        node2.left = node5;
-        node2.right = node6;
-        return root;
     }
 }
 

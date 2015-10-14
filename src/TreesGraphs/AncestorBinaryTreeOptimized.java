@@ -17,9 +17,13 @@ package TreesGraphs;
 
 public class AncestorBinaryTreeOptimized {
     public static void main(String[] args) {
-        TreeNode root = createTree();
-        System.out.println("First common ancestor of " + root + " and " + root.right + ": " + ancestor(root, root, root.right));
-        System.out.println("First common ancestor of " + root.left.left + " and " + root.left.right + ": " + ancestor(root, root.left.left, root.left.right));
+        TreeNode root = TreeUtils.createBinaryTree(10, 17, 1, 3, 9, null, 16);
+        TreeNode node1 = TreeUtils.findBinaryTree(root, 10);
+        TreeNode node2 = TreeUtils.findBinaryTree(root, 16);
+        System.out.println("First common ancestor of " + node1 + " and " + node2 + ": " + ancestor(root, node1, node2));
+        node1 = TreeUtils.findBinaryTree(root, 3);
+        node2 = TreeUtils.findBinaryTree(root, 9);
+        System.out.println("First common ancestor of " + node1 + " and " + node2 + ": " + ancestor(root, node1, node2));
     }
 
 
@@ -49,20 +53,6 @@ public class AncestorBinaryTreeOptimized {
             return new Result(leftSide.node != null ? leftSide.node : rightSide.node, false);
     }
 
-    public static TreeNode createTree() {
-        TreeNode root = new TreeNode(10);
-        TreeNode node1 = new TreeNode(17);
-        TreeNode node2 = new TreeNode(1);
-        TreeNode node3 = new TreeNode(3);
-        TreeNode node4 = new TreeNode(9);
-        TreeNode node6 = new TreeNode(16);
-        root.left = node1;
-        root.right = node2;
-        node1.left = node3;
-        node1.right = node4;
-        node2.right = node6;
-        return root;
-    }
 }
 
 class Result {

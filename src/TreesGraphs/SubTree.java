@@ -16,8 +16,8 @@ package TreesGraphs;
 
 public class SubTree {
     public static void main(String[] args) {
-        TreeNode t1 = createT1();
-        TreeNode t2 = createT2();
+        TreeNode t1 = TreeUtils.createBinaryTree(10, 17, 1, 3, 9, null, 16);
+        TreeNode t2 = TreeUtils.createBinaryTree(17, 3, 9);
         System.out.println("Is T2 subtree of T1: " + isSubTree(t1, t2));
     }
 
@@ -50,31 +50,6 @@ public class SubTree {
         if (t1.data != t2.data)
             return false;
         return match(t1.left, t2.left) && match(t1.right, t2.right);
-    }
-
-
-    public static TreeNode createT1() {
-        TreeNode root = new TreeNode(10);
-        TreeNode node1 = new TreeNode(17);
-        TreeNode node2 = new TreeNode(1);
-        TreeNode node3 = new TreeNode(3);
-        TreeNode node4 = new TreeNode(9);
-        TreeNode node6 = new TreeNode(16);
-        root.left = node1;
-        root.right = node2;
-        node1.left = node3;
-        node1.right = node4;
-        node2.right = node6;
-        return root;
-    }
-
-    public static TreeNode createT2() {
-        TreeNode root = new TreeNode(17);
-        TreeNode node1 = new TreeNode(3);
-        TreeNode node2 = new TreeNode(9);
-        root.left = node1;
-        root.right = node2;
-        return root;
     }
 }
 

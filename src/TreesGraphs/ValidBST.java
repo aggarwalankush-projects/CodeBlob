@@ -15,7 +15,7 @@ package TreesGraphs;
 
 public class ValidBST {
     public static void main(String[] args) {
-        TreeNode root = createTree();
+        TreeNode root = TreeUtils.createBinaryTree(10, 7, 13, 3, 9, null, 16);
         System.out.println("Is valid BST: " + isValidBST(root));
     }
 
@@ -39,20 +39,5 @@ public class ValidBST {
         return true;
     }
 
-
-    public static TreeNode createTree() {
-        TreeNode root = new TreeNode(10);
-        TreeNode node1 = new TreeNode(7);
-        TreeNode node2 = new TreeNode(13);
-        TreeNode node3 = new TreeNode(3);
-        TreeNode node4 = new TreeNode(9);
-        TreeNode node6 = new TreeNode(16);
-        root.left = node1;
-        root.right = node2;
-        node1.left = node3;
-        node1.right = node4;
-        node2.right = node6;
-        return root;
-    }
 }
 
