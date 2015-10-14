@@ -1,4 +1,4 @@
-package TreesGraphs;
+package Trees;
 
 /**
  * Given a sorted (increasing order) array with unique integer elements,

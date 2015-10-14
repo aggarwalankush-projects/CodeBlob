@@ -1,4 +1,4 @@
-package TreesGraphs;
+package Graphs;
 
 public class GraphNode {
     public enum State {

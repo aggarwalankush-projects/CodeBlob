@@ -1,8 +1,8 @@
-package TreesGraphs;
+package Graphs;
 
 import java.util.ArrayDeque;
 
-import static TreesGraphs.GraphNode.State.*;
+import static Graphs.GraphNode.State.*;
 
 //@formatter:off
 /**

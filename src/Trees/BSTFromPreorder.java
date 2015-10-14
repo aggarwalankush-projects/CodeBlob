@@ -1,4 +1,4 @@
-package TreesGraphs;
+package Trees;
 
 //@formatter:off
 import java.util.Stack; /**
