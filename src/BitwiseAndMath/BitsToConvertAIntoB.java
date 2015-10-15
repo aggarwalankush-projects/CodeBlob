@@ -1,4 +1,4 @@
-package BitManipulation;
+package BitwiseAndMath;
 
 /**
  * Find the number of bits required to convert integer A to integer B.

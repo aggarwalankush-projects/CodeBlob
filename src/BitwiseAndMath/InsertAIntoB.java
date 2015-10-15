@@ -1,4 +1,4 @@
-package BitManipulation;
+package BitwiseAndMath;
 
 /**
  * Given two 32-bit numbers,A and B, and two bit positions, i and j.

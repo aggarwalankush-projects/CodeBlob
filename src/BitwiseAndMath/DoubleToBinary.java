@@ -1,4 +1,4 @@
-package BitManipulation;
+package BitwiseAndMath;
 
 /**
  * Given a Double number between 0 and 1, print the binary representation.
