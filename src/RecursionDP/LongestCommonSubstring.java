@@ -21,22 +21,22 @@ public class LongestCommonSubstring {
         int M = first.length();
         int N = second.length();
         int[][] array = new int[M + 1][N + 1];
-        int maxLen=0, endPos=-1;
+        int maxLen = 0, endPos = -1;
 
         for (int i = 1; i <= M; i++) {
-            for (int j = 1; j <=N; j++) {
-                if(first.charAt(i-1)==second.charAt(j-1)){
-                    array[i][j]=array[i-1][j-1]+1;
-                    if(array[i][j]>maxLen){
-                        maxLen=array[i][j];
-                        endPos=i;
+            for (int j = 1; j <= N; j++) {
+                if (first.charAt(i - 1) == second.charAt(j - 1)) {
+                    array[i][j] = array[i - 1][j - 1] + 1;
+                    if (array[i][j] > maxLen) {
+                        maxLen = array[i][j];
+                        endPos = i;
                     }
-                }else
-                    array[i][j]=0;
+                } else
+                    array[i][j] = 0;
             }
         }
 
-        return first.substring(endPos-maxLen,endPos);
+        return first.substring(endPos - maxLen, endPos);
 
     }
 }
