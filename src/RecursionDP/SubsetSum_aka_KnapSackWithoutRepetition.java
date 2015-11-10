@@ -7,7 +7,7 @@ import java.util.Arrays;
  * Given a set of non-negative integers, and a target K
  * Find if there exists a subset with sum equals to K.
  */
-public class SubsetSum {
+public class SubsetSum_aka_KnapSackWithoutRepetition {
 
     public static void main(String[] args) {
         int[] input = {8, 3, 5, 11, 4, 9};
