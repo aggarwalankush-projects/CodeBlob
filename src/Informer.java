@@ -27,7 +27,7 @@ public class Informer {
             }
         }
 
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("Informer.json"))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("./src/Informer.json"))) {
             writer.write(info.toString());
         } catch (IOException e) {
             e.printStackTrace();
