@@ -56,7 +56,7 @@ public class GenerateOutput {
 
     }
 
-    private static TreeMap<String, ArrayList<String>> getTopicToQuestionMap() {
+    public static TreeMap<String, ArrayList<String>> getTopicToQuestionMap() {
         TreeMap<String, ArrayList<String>> map = new TreeMap<>();
         File directory = new File(SRC_PATH);
         for (File file : directory.listFiles()) {
