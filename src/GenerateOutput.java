@@ -10,11 +10,11 @@ import java.util.TreeMap;
 
 public class GenerateOutput {
 
-    final static String SRC_PATH = "./src";
+    final static String SRC_PATH = Utility.SRC_PATH;
     final static String OUTPUT_FILE = SRC_PATH+"/Output.json";
 
-    public static void main(String[] args) throws Exception {
-        TreeMap<String, ArrayList<String>> topicToQuestionMap = getTopicToQuestionMap();
+    public static void main(String[] args) {
+        TreeMap<String, ArrayList<String>> topicToQuestionMap = Utility.getTopicToQuestionMap();
 
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         PrintStream ps = new PrintStream(baos);
@@ -30,7 +30,12 @@ public class GenerateOutput {
             for (String question : questions) {
                 baos.reset();
                 question = question.split("\\.")[0];
-                Class cls = Class.forName(topic + "." + question);
+                Class cls = null;
+                try {
+                    cls = Class.forName(topic + "." + question);
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
                 try {
                     Method method = cls.getMethod("main", String[].class);
                     method.invoke(null, new Object[]{new String[]{}});
@@ -56,23 +61,5 @@ public class GenerateOutput {
 
     }
 
-    public static TreeMap<String, ArrayList<String>> getTopicToQuestionMap() {
-        TreeMap<String, ArrayList<String>> map = new TreeMap<>();
-        File directory = new File(SRC_PATH);
-        for (File file : directory.listFiles()) {
-            if (file.isDirectory()) {
-                String topic = file.getName();
-                directory = new File(file.getAbsolutePath());
-                ArrayList<String> questions = new ArrayList<>();
-                for (File f : directory.listFiles()) {
-                    if (f.isFile()) {
-                        questions.add(f.getName());
-                    }
-                }
-                map.put(topic, questions);
-            }
-        }
-        return map;
-    }
 
 }
