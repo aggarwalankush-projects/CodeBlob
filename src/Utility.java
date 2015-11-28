@@ -77,7 +77,7 @@ public class Utility {
                     if (htmlDarkCode == null)
                         throw new Exception("null html code");
 
-                    htmlDarkCode = htmlDarkCode.substring(htmlDarkCode.indexOf("<span"), htmlDarkCode.lastIndexOf("</span>") + 7);
+                    htmlDarkCode = htmlDarkCode.substring(htmlDarkCode.indexOf("<span"), htmlDarkCode.lastIndexOf("</pre>"));
 
                     htmlDarkCode = htmlDarkCode.replaceAll("<span style=\"color: ", "<font color=\"").replaceAll("</span>", "</font>");
 
