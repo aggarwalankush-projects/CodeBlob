@@ -10,8 +10,7 @@ import java.util.concurrent.TimeUnit;
 public class Utility {
 
     static final String SRC_PATH = "./src";
-    static String outDir = "";
-    static String OUT_PATH = SRC_PATH + "/" + outDir;
+    static String OUT_PATH = SRC_PATH + "/";
     static final String SERVER_BASE_URL = "http://hilite.me/api";
     static final String LEXER = "java";
     static String STYLE = "friendly";
@@ -41,7 +40,7 @@ public class Utility {
 
     public static void generateColoredHtml(String style, String outDirectory, String commentSpanString) {
         STYLE = style;
-        outDir = outDirectory;
+        OUT_PATH += outDirectory;
         spanString = commentSpanString;
 
         TreeMap<String, ArrayList<String>> topicToQuestionMap = getTopicToQuestionMap();
